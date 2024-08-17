@@ -1,0 +1,32 @@
+#maze {
+    display: grid;
+    grid-template-columns: repeat(10, 30px); /* 假设迷宫是10x10 */
+    grid-gap: 2px;
+    width: fit-content;
+    margin: auto;
+}
+
+.cell {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wall {
+    background-color: #000;
+}
+
+.start {
+    background-color: green;
+}
+
+.end {
+    background-color: red;
+}
+
+.path {
+    background-color: yellow;
+}
